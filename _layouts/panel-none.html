@@ -1,0 +1,81 @@
+---
+layout: compress
+---
+<!DOCTYPE html>
+{% include lang.html %}
+{% include options.html %}
+{% capture prefer_mode %}
+    {% if site.theme_mode %}
+        data-mode="{{ site.theme_mode }}"
+    {% endif %}
+{% endcapture %}
+<html lang="{{ site.lang }}"{{ prefer_mode }}>
+    {% include head.html %}
+    <body data-spy="scroll" data-target="#toc" data-navbar-visible="true">
+        {% if page.header %}
+            {% if page.header == "wide" %}
+                {% include header-wide.html %}
+            {% elsif page.header == "regular" %}
+                {% include header.html %}
+            {% elsif page.header == "banner" %}
+                {% include header-banner.html %}
+            {% endif %}
+        {% endif %}
+        {% include navbar.html %}
+        {% include breadcrumbs.html %}
+        {% if page.top-panel %}
+            {% if page.top-panel == "full" %}
+                {% include panel-top-full.html %}
+            {% elsif page.top-panel == "2-cols" %}
+                {% include panel-top-2.html %}
+            {% elsif page.top-panel == "3-cols" %}
+                {% include panel-top-3.html %}
+            {% elsif page.top-panel == "4-cols" %}
+                {% include panel-top-4.html %}
+            {% endif %}
+        {% endif %}
+        <div id="main-wrapper" class="d-flex justify-content-center">
+            <div id="main" class="container-fluid">
+                {{ content }}
+            </div>
+        </div>
+        {% if page.bottom-panel %}
+            {% include panel-bottom.html %}
+        {% endif %}
+        {% if page.foot-panel %}
+            {% if page.foot-panel == "full" %}
+                {% include panel-foot-full.html %}
+            {% elsif page.foot-panel == "2-cols" %}
+                {% include panel-foot-2.html %}
+            {% elsif page.foot-panel == "3-cols" %}
+                {% include panel-foot-3.html %}
+            {% elsif page.foot-panel == "4-cols" %}
+                {% include panel-foot-4.html %}
+            {% endif %}
+        {% endif %}
+        {% include footer.html %}
+        {% include copyright.html %}
+        <div id="mask"></div>
+        {% if page.to-top %}{% include back-to-top.html %}{% endif %}
+        {% include search-results.html %}
+        {% if page.mermaid %}{% include mermaid.html %}{% endif %}
+        {% if site.pwa.enabled %}
+        <div id="notification" class="toast" role="alert" aria-live="assertive" aria-atomic="true"
+             data-animation="true" data-autohide="false">
+            <div class="toast-header">
+                <button type="button" class="ml-2 ml-auto close" data-dismiss="toast" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="toast-body text-center pt-0">
+                <p class="pl-2 pr-2 mb-3">{{ site.data.locales[lang].notification.update_found }}</p>
+                <button type="button" class="btn btn-primary" aria-label="Update">
+                    {{ site.data.locales[lang].notification.update }}
+                </button>
+            </div>
+        </div>
+        {% endif %}
+        {% include search-loader.html %}
+        {% include javascript.html %}
+    </body>
+</html>

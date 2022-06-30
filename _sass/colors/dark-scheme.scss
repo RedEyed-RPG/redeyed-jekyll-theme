@@ -1,0 +1,21 @@
+/*
+    Primary Dark Mode Theme
+*/
+
+@mixin dark-scheme {
+    /* FRAMEWORK COLOR */
+    --body-bg: rgb(25, 26, 30);
+    --card-bg-1: rgb(44, 46, 51);
+    --mask-bg: rgb(68, 69, 70);
+    --main-wrapper-gb: var(--body-bg);
+    --main-border-color: rgb(44, 45, 45);
+
+    /* COMMON COLOR */
+    --text-color: rgb(224, 224, 224);
+    --text-muted-color: rgb(173, 169, 169);
+    --heading-color: #FFFFFF;
+    --link-color: rgb(251, 58, 100);
+    --link-underline-color: var(--link-ciolor);
+    --button-bg: var(--link-ciolor);
+    --button-border-color: var(--link-ciolor);
+}
