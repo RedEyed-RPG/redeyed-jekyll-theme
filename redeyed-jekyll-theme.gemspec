@@ -6,7 +6,7 @@ Gem::Specification.new do |spec|
     spec.authors       = ["Ragdata"]
     spec.email         = ["ragdata@redeyed-rpg.com"]
 
-    spec.summary       = "%q{A versatile theme built for a site about Dungeons & Dragons}"
+    spec.summary       = "A versatile theme built for a site about Dungeons & Dragons"
     spec.homepage      = "https://github.com/RedEyed-RPG/redeyed-jekyll-theme"
     spec.license       = "MIT"
 
