@@ -1,0 +1,11 @@
+{% comment %} Detect language and return it through variable "lang" {% endcomment %}
+{% if page.lang %}
+    {% assign lang = page.lang %}
+{% elsif site.lang %}
+    {% assign lang = site.lang %}
+{% endif %}
+{% if site.data.locales[site.lang] %}
+  {% assign lang = site.lang %}
+{% else %}
+  {% assign lang = 'en' %}
+{% endif %}

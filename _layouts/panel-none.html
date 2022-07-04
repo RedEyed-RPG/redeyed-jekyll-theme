@@ -2,36 +2,36 @@
 layout: compress
 ---
 <!DOCTYPE html>
-{% include lang.html %}
-{% include options.html %}
+{% include elements/lang.html %}
+{% include elements/options.html %}
 {% capture prefer_mode %}
     {% if site.theme_mode %}
         data-mode="{{ site.theme_mode }}"
     {% endif %}
 {% endcapture %}
-<html lang="{{ site.lang }}"{{ prefer_mode }}>
+<html lang="{{ lang }}"{{ prefer_mode }}>
     {% include head.html %}
     <body data-spy="scroll" data-target="#toc" data-navbar-visible="true">
         {% if page.header %}
             {% if page.header == "wide" %}
-                {% include header-wide.html %}
+                {% include views/header-wide.html %}
             {% elsif page.header == "regular" %}
-                {% include header.html %}
+                {% include views/header.html %}
             {% elsif page.header == "banner" %}
-                {% include header-banner.html %}
+                {% include views/header-banner.html %}
             {% endif %}
         {% endif %}
-        {% include navbar.html %}
-        {% include breadcrumbs.html %}
+        {% include elements/navbar.html %}
+        {% include elements/breadcrumbs.html %}
         {% if page.top-panel %}
             {% if page.top-panel == "full" %}
-                {% include panel-top-full.html %}
+                {% include views/panel-top-full.html %}
             {% elsif page.top-panel == "2-cols" %}
-                {% include panel-top-2.html %}
+                {% include views/panel-top-2.html %}
             {% elsif page.top-panel == "3-cols" %}
-                {% include panel-top-3.html %}
+                {% include views/panel-top-3.html %}
             {% elsif page.top-panel == "4-cols" %}
-                {% include panel-top-4.html %}
+                {% include views/panel-top-4.html %}
             {% endif %}
         {% endif %}
         <div id="main-wrapper" class="d-flex justify-content-center">
@@ -40,28 +40,26 @@ layout: compress
             </div>
         </div>
         {% if page.bottom-panel %}
-            {% include panel-bottom.html %}
+            {% include views/panel-bottom.html %}
         {% endif %}
         {% if page.foot-panel %}
             {% if page.foot-panel == "full" %}
-                {% include panel-foot-full.html %}
+                {% include views/panel-foot-full.html %}
             {% elsif page.foot-panel == "2-cols" %}
-                {% include panel-foot-2.html %}
+                {% include views/panel-foot-2.html %}
             {% elsif page.foot-panel == "3-cols" %}
-                {% include panel-foot-3.html %}
+                {% include views/panel-foot-3.html %}
             {% elsif page.foot-panel == "4-cols" %}
-                {% include panel-foot-4.html %}
+                {% include views/panel-foot-4.html %}
             {% endif %}
         {% endif %}
-        {% include footer.html %}
-        {% include copyright.html %}
+        {% include views/footer.html %}
+        {% include views/copyright.html %}
         <div id="mask"></div>
-        {% if page.to-top %}{% include back-to-top.html %}{% endif %}
-        {% include search-results.html %}
-        {% if page.mermaid %}{% include mermaid.html %}{% endif %}
+        {% if page.to-top %}{% include elements/back-to-top.html %}{% endif %}
+        {% include elements/search-results.html %}
         {% if site.pwa.enabled %}
-        <div id="notification" class="toast" role="alert" aria-live="assertive" aria-atomic="true"
-             data-animation="true" data-autohide="false">
+        <div id="notification" class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-animation="true" data-autohide="false">
             <div class="toast-header">
                 <button type="button" class="ml-2 ml-auto close" data-dismiss="toast" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
@@ -75,7 +73,7 @@ layout: compress
             </div>
         </div>
         {% endif %}
-        {% include search-loader.html %}
-        {% include javascript.html %}
+        {% include elements/search-loader.html %}
+        {% include elements/javascript.html %}
     </body>
 </html>
