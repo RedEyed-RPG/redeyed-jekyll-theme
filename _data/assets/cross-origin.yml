@@ -35,9 +35,6 @@ material-design:
 search:
     js: https://cdn.jsdelivr.net/npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js
 
-mermaid:
-    js: https://cdn.jsdelivr.net/npm/mermaid@8/dist/mermaid.min.js
-
 dayjs:
     js:
         common: https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js
@@ -60,6 +57,3 @@ clipboard:
 
 polyfill:
     js: https://polyfill.io/v3/polyfill.min.js?features=es6
-
-mathjax:
-    js: https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js
