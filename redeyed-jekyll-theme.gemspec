@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
     spec.name          = "redeyed-jekyll-theme"
-    spec.version       = "0.1.0"
+    spec.version       = "0.2.0"
     spec.authors       = ["Ragdata"]
     spec.email         = ["ragdata@redeyed-rpg.com"]
 
@@ -25,21 +25,24 @@ Gem::Specification.new do |spec|
 
     spec.required_ruby_version = ">= 2.5"
 
+    spec.add_development_dependency "bundler", ">= 1.6", "< 3.0"
+    spec.add_development_dependency "rake", ">= 12.0", "< 13.0"
+
     spec.add_runtime_dependency "jekyll", "~> 4.2"
     spec.add_runtime_dependency "jemoji"
     spec.add_runtime_dependency "jekyll-toc"
     spec.add_runtime_dependency "jekyll-feed"
-    spec.add_runtime_dependency "jekyll-seo-tag"
-    spec.add_runtime_dependency "jekyll-archives"
-    spec.add_runtime_dependency "jekyll-sitemap"
+    spec.add_runtime_dependency "jekyll-seo-tag", "~> 2.8"
+    spec.add_runtime_dependency "jekyll-archives", "~> 2.2"
+    spec.add_runtime_dependency "jekyll-sitemap", "~> 1.4"
     spec.add_runtime_dependency "jekyll-mentions"
     spec.add_runtime_dependency "jekyll-pluralize"
     spec.add_runtime_dependency "jekyll-paginate-v2"
     #spec.add_runtime_dependency "jekyll-include-cache"
-    spec.add_runtime_dependency "jekyll-redirect-from"
+    spec.add_runtime_dependency "jekyll-redirect-from", "~> 0.16"
     spec.add_runtime_dependency "jekyll-email-protect"
     spec.add_runtime_dependency "jekyll-tagging-related_posts"
-    #spec.add_runtime_dependency
+    spec.add_runtime_dependency "jekyll-spaceship", "~> 0.10"
     #spec.add_runtime_dependency
     #spec.add_runtime_dependency
     #spec.add_runtime_dependency

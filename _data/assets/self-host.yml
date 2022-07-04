@@ -21,9 +21,6 @@ material-design:
 search:
     js: /assets/lib/simple-jekyll-search-1.10.0/simple-jekyll-search.min.js
 
-mermaid:
-    js: /assets/lib/mermaid-8.13.10/mermaid.min.js
-
 dayjs:
     js:
         common: /assets/lib/dayjs-1.10.7/dayjs.min.js
@@ -46,6 +43,3 @@ clipboard:
 
 polyfill:
     js: /assets/lib/polyfill-v3-es6/polyfill.min.js
-
-mathjax:
-    js: /assets/lib/mathjax-3.2.0/tex-chtml.js

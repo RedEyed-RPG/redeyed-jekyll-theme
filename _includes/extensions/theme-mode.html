@@ -8,7 +8,6 @@
         static get MODE_ATTR() { return "data-mode"; }
         static get DARK_MODE() { return "dark"; }
         static get LIGHT_MODE() { return "light"; }
-        static get BREW_MODE() { return "brew"; }
         static get ID() { return "mode-toggle"; }
 
         constructor() {
@@ -57,8 +56,6 @@
 
         get isLightMode() { return this.mode === ModeToggle.LIGHT_MODE; }
 
-        get isBrewMode() { return this.mode === ModeToggle.BREW_MODE; }
-
         get hasMode() { return this.mode != null; }
 
         get mode() { return sessionStorage.getItem(ModeToggle.MODE_KEY); }
@@ -67,8 +64,6 @@
         get modeStatus() {
             if (this.isDarkMode || (!this.hasMode && this.isSysDarkPrefer)) {
                 return ModeToggle.DARK_MODE;
-            } else if (this.isBrewMode) {
-                return ModeToggle.BREW_MODE;
             } else {
                 return ModeToggle.LIGHT_MODE;
             }
@@ -82,11 +77,6 @@
         setLight() {
             $('html').attr(ModeToggle.MODE_ATTR, ModeToggle.LIGHT_MODE);
             sessionStorage.setItem(ModeToggle.MODE_KEY, ModeToggle.LIGHT_MODE);
-        }
-
-        setBrew() {
-            $('html').attr(ModeToggle.MODE_ATTR, ModeToggle.BREW_MODE);
-            sessionStorage.setItem(ModeToggle.MODE_KEY, ModeToggle.BREW_MODE);
         }
 
         clearMode() {
