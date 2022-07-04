@@ -27,23 +27,23 @@ Gem::Specification.new do |spec|
 
     spec.add_runtime_dependency "jekyll", "~> 4.2"
     spec.add_runtime_dependency "jemoji", "~> 0.12"
-    spec.add_runtime_dependency "jekyll-toc", "-> 0.17"
+    spec.add_runtime_dependency "jekyll-toc", "~> 0.17"
     spec.add_runtime_dependency "jekyll-feed", "~> 0.9"
     spec.add_runtime_dependency "jekyll-seo-tag", "~> 2.7"
     spec.add_runtime_dependency "jekyll-archives", "~> 2.2"
     spec.add_runtime_dependency "jekyll-sitemap", "~> 1.4"
-    spec.add_runtime_dependency "jekyll-mentions", "-> 1.6"
+    spec.add_runtime_dependency "jekyll-mentions", "~> 1.6"
     spec.add_runtime_dependency "jekyll-paginate", "~> 1.1"
     spec.add_runtime_dependency "jekyll-spaceship", "~> 0.2"
-    spec.add_runtime_dependency "jekyll-pluralize", "-> 0.0"
-    #spec.add_runtime_dependency "jekyll-paginate-v2", "-> 3.0"
-    #spec.add_runtime_dependency "jekyll-include-cache", "-> 0.2"
+    spec.add_runtime_dependency "jekyll-pluralize", "~> 0.0"
+#     spec.add_runtime_dependency "jekyll-paginate-v2", "~> 3.0"
+#     spec.add_runtime_dependency "jekyll-include-cache", "~> 0.2"
     spec.add_runtime_dependency "jekyll-redirect-from", "~> 0.16"
-    spec.add_runtime_dependency "jekyll-email-protect", "-> 1.1"
-    spec.add_runtime_dependency "jekyll-tagging-related_posts", "-> 1.2"
-    #spec.add_runtime_dependency
-    #spec.add_runtime_dependency
-    #spec.add_runtime_dependency
-    #spec.add_runtime_dependency
-    #spec.add_development_dependency
+    spec.add_runtime_dependency "jekyll-email-protect", "~> 1.1"
+    spec.add_runtime_dependency "jekyll-tagging-related_posts", "~> 1.2"
+#     spec.add_runtime_dependency
+#     spec.add_runtime_dependency
+#     spec.add_runtime_dependency
+#     spec.add_runtime_dependency
+#     spec.add_development_dependency
 end
