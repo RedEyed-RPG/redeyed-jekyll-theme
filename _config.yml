@@ -48,6 +48,7 @@ pwa:                                        # pwa mode config
 #    service_worker:
 toc: true                                   # table of contents - global switch
 theme_mode: dark                            # custom config option: [light|dark|brew]
+copyright: "Copyright (c) 2022 ~ {author} & RedEyed-RPG ~ Some Rights Reserved"
 
 ####################################################################
 # 2. GEM SETTINGS
@@ -55,22 +56,24 @@ theme_mode: dark                            # custom config option: [light|dark|
 feed:                                       # jekyll-feed
     path: /blog/feed.atom                   # jekyll-feed > feed path
 
-pagination:                                 # jekyll-paginate-v2
-    enabled: false                           # jekyll-paginate-v2 > enabled
-    debug: false                            # jekyll-paginate-v2 > debug mode
-    collection: posts                       # jekyll-paginate-v2 > default collection to paginate
-    per_page: 10                            # jekyll-paginate-v2 > results per page
-    permalink: 'page/:num:output_ext'       # jekyll-paginate-v2 > permalink format
-    title: ':title - page :num'             # jekyll-paginate-v2 > title format
-    limit: 0                                # jekyll-paginate-v2 > limit
-    sort_field: date                        # jekyll-paginate-v2 > sort field
-    sort_reverse: true                      # jekyll-paginate-v2 > reverse sort option
-    category: posts                         # jekyll-paginate-v2 > category
-    trail:                                  # jekyll-paginate-v2 > page link trail
-        before: 2                           # jekyll-paginate-v2 > number of page links to show before current
-        after: 2                            # jekyll-paginate-v2 > number of page links to show after current
-    extension: html                         # jekyll-paginate-v2 > default page extension
-    indexpage: index                        # jekyll-paginate-v2 > name of index page
+
+
+#pagination:                                 # jekyll-paginate-v2
+#    enabled: false                           # jekyll-paginate-v2 > enabled
+#    debug: false                            # jekyll-paginate-v2 > debug mode
+#    collection: posts                       # jekyll-paginate-v2 > default collection to paginate
+#    per_page: 10                            # jekyll-paginate-v2 > results per page
+#    permalink: 'page/:num:output_ext'       # jekyll-paginate-v2 > permalink format
+#    title: ':title - page :num'             # jekyll-paginate-v2 > title format
+#    limit: 0                                # jekyll-paginate-v2 > limit
+#    sort_field: date                        # jekyll-paginate-v2 > sort field
+#    sort_reverse: true                      # jekyll-paginate-v2 > reverse sort option
+#    category: posts                         # jekyll-paginate-v2 > category
+#    trail:                                  # jekyll-paginate-v2 > page link trail
+#        before: 2                           # jekyll-paginate-v2 > number of page links to show before current
+#        after: 2                            # jekyll-paginate-v2 > number of page links to show after current
+#    extension: html                         # jekyll-paginate-v2 > default page extension
+#    indexpage: index                        # jekyll-paginate-v2 > name of index page
 
 jekyll-mentions: https://twitter.com        # jekyll-mentions > service used when @replying
 
@@ -134,6 +137,8 @@ sass:
 permalink: date                             # permalink style (YYYY/MM/DD/page-name)
 excerpt_separator: <!-- more -->            # marks end of excerpt in posts
 timezone: Australia/Brisbane                # timezone for blog and posts
+paginate: 10                                # paginate - # of items per page
+paginate_path: /page:num                    # paginate - default page slug for pages
 
 ####################################################################
 # 5. SITE FAVICONS & MANIFEST ICONS
@@ -209,9 +214,11 @@ plugins:
     - jekyll-archives
     - jekyll-sitemap
     - jekyll-mentions
+    - jekyll-paginate
+    - jekyll-spaceship
     - jekyll-pluralize
-    - jekyll-paginate-v2
-    #- jekyll-include-cache
+#    - jekyll-paginate-v2
+#    - jekyll-include-cache
     - jekyll-redirect-from
     - jekyll-email-protect
     - jekyll-tagging-related_posts
