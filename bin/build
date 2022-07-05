@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 
 gem build redeyed-jekyll-theme.gemspec
-gem push redeyed-jekyll-theme-0.1.1.gem
+gem push redeyed-jekyll-theme-0.1.2.gem
