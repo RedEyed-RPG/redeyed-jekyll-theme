@@ -2,11 +2,11 @@
 
 Gem::Specification.new do |spec|
     spec.name          = "redeyed-jekyll-theme"
-    spec.version       = "0.1.1"
+    spec.version       = "0.1.2"
     spec.authors       = ["Ragdata"]
     spec.email         = ["ragdata@redeyed-rpg.com"]
 
-    spec.summary       = "A versatile, responsive theme built for a site about Dungeons & Dragons"
+    spec.summary       = "(WIP) A versatile, responsive theme built for a site about Dungeons & Dragons.  Please DO NOT consider this to be anything close to a production release just yet.  I'm learning as I go here."
     spec.homepage      = "https://github.com/RedEyed-RPG/redeyed-jekyll-theme"
     spec.license       = "MIT"
 
@@ -16,7 +16,7 @@ Gem::Specification.new do |spec|
 
     spec.metadata = {
         "bug_tracker_uri" => "https://github.com/RedEyed-RPG/redeyed-jekyll-theme/issues",
-        "documentation_uri" => "https://github.com/RedEyed-RPG/redeyed-jekyll-theme",
+        "documentation_uri" => "https://github.com/RedEyed-RPG/redeyed-jekyll-theme/wiki",
         "homepage_uri" => "https://github.com/RedEyed-RPG/redeyed-jekyll-theme",
         "source_code_uri" => "https://github.com/RedEyed-RPG/redeyed-jekyll-theme",
         "wiki_uri" => "https://github.com/RedEyed-RPG/redeyed-jekyll-theme/wiki",
