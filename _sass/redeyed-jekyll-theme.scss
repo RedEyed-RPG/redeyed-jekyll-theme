@@ -9,8 +9,8 @@
 // -----------------------------------------------------------------
 // IMPORT BOOTSTRAP FUNCTIONS & VARIABLES
 // -----------------------------------------------------------------
-@import "../assets/lib/bootstrap-5.0.2/scss/functions";
-@import "../assets/lib/bootstrap-5.0.2/scss/variables";
+@import "lib/bootstrap-5.0.2/scss/functions";
+@import "lib/bootstrap-5.0.2/scss/variables";
 
 // -----------------------------------------------------------------
 // IMPORT THEME COLORS
@@ -29,7 +29,7 @@
 // -----------------------------------------------------------------
 // IMPORT MAIN BOOTSTRAP SCSS
 // -----------------------------------------------------------------
-@import "../assets/lib/bootstrap-5.0.2/scss/bootstrap";
+@import "lib/bootstrap-5.0.2/scss/bootstrap";
 
 // -----------------------------------------------------------------
 // IMPORT REMAINING THEME FILES
