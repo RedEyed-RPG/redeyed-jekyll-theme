@@ -21,4 +21,5 @@ Gemfile.lock
 # npm dependencies
 node_modules
 package-lock.json
-!/assets/lib/bootstrap-5.0.2/scss/vendor/
+!/_sass/lib/bootstrap-5.0.2/scss/vendor/
+
