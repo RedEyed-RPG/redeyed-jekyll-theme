@@ -15,7 +15,7 @@
           | append: ',' | append: site.data.assets[origin].lozad.js
           | append: ',' | append: site.data.assets[origin].clipboard.js
     %}
-    {% include jsdelivr-combine.html urls=_urls %}
+    {% include elements/jsdelivr-combine.html urls=_urls %}
 {% endif %}
 
 {% if page.layout == 'home'
@@ -34,7 +34,7 @@
           | append: ',' | append: site.data.assets[origin].dayjs.js.relativeTime
           | append: ',' | append: site.data.assets[origin].dayjs.js.localizedFormat
     %}
-    {% include jsdelivr-combine.html urls=_urls %}
+    {% include elements/jsdelivr-combine.html urls=_urls %}
 {% endif %}
 
 {% if page.layout == 'home'
