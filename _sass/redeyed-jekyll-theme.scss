@@ -6,20 +6,36 @@
  * MIT Licensed
  */
 
-//@import
-//    "colors/light-scheme",
-//    "colors/dark-scheme",
-//
-//    "addon/mixins",
-//    "addon/variables",
-//    "variables-hook",
-//    "addon/syntax",
-//    "addon/common",
-//
-//    "layout/page",
-//    "layout/panel-both",
-//    "layout/panel-left",
-//    "layout/panel-none",
-//    "layout/panel-right",
-//    "layout/post";
+// -----------------------------------------------------------------
+// IMPORT BOOTSTRAP FUNCTIONS & VARIABLES
+// -----------------------------------------------------------------
+@import "../assets/lib/bootstrap-5.0.2/scss/functions";
+@import "../assets/lib/bootstrap-5.0.2/scss/variables";
 
+// -----------------------------------------------------------------
+// IMPORT THEME COLORS
+// -----------------------------------------------------------------
+@import
+    "theme/scheme-brew",
+    "theme/scheme-dark",
+    "theme/scheme-light";
+
+// -----------------------------------------------------------------
+// IMPORT THEME MIXINS & VARIABLES
+// -----------------------------------------------------------------
+@import "addon/mixins";
+@import "theme/variables";
+
+// -----------------------------------------------------------------
+// IMPORT MAIN BOOTSTRAP SCSS
+// -----------------------------------------------------------------
+@import "../assets/lib/bootstrap-5.0.2/scss/bootstrap";
+
+// -----------------------------------------------------------------
+// IMPORT REMAINING THEME FILES
+// -----------------------------------------------------------------
+@import
+    "variables-hook",
+    "layout/base",
+    "addon/alerts",
+    "addon/typography";

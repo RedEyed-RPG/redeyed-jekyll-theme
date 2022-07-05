@@ -1,0 +1,220 @@
+/*
+ * LIGHT MODE THEME
+ */
+
+@mixin light-scheme {
+
+    /* COMMON COLORS */
+
+    --blue: #0078D2;
+    --indigo: #3C00D2;
+    --purple: #6900D2;
+    --pink: #D200B4;
+    --red: #D20000;
+    --orange: #D26900;
+    --yellow: #D2B400;
+    --green: #3CD200;
+    --teal: #00D278;
+    --cyan: #00D2D2;
+    --violet: #D200D2;
+    --black: #000000;
+    --white: #FFFFFF;
+    --smoke: #EDDCC9;
+    --darkslategray: #2F4F4F;
+    --dodger-blue: #1E90FF;
+    --cyan-cobalt: #1D58A5;
+
+    /* FRAMEWORK */
+
+    --primary-bg: rgb(33, 37, 41);
+    --secondary-bg: rgb(56, 66, 94);
+    --tertiary-bg: rgb(25, 28, 36);
+
+    --primary: var(--red);
+    --secondary: var(--orange);
+    --success: var(--green);
+    --info: var(--blue);
+    --warning: var(--yellow);
+    --danger: #CD0202;
+    --light: #AAB2BD;
+    --dark: #12151E;
+    --bright: var(--white);
+    --subdued: #808080;
+
+    /* FONTS */
+
+    --text-color: var(--light);
+    --text-muted: var(--subdued);
+    --heading-primary: var(--white);
+    --heading-secondary: var(--red);
+    --subheading: rgb(108, 114, 147);
+
+    /* ALERTS */
+
+    --alert-primary-bg: rgb(210 0 0 / 25%);
+    --alert-primary-text: var(--red);
+    --alert-primary-border: rgb(210 0 0 / 50%);
+    --alert-secondary-bg:  rgb(210 105 0 / 25%);
+    --alert-secondary-text: var(--orange);
+    --alert-secondary-border: rgb(210 105 3 / 50%);
+    --alert-success-bg: rgb(60 210 0 / 25%);
+    --alert-success-text: var(--green);
+    --alert-success-border: rgb(60 210 0 / 50%);
+    --alert-danger-bg: rgb(205 2 2 / 25%);
+    --alert-danger-text: var(--danger);
+    --alert-danger-border: rgb(205 2 2 / 50%);
+    --alert-warning-bg: rgb(210 180 0 / 25%);
+    --alert-warning-text: var(--yellow);
+    --alert-warning-border: rgb(210 180 0 / 50%);
+    --alert-info-bg: rgb(0 120 210 / 25%);
+    --alert-info-text: var(--blue);
+    --alert-info-border: rgb(0 120 210 / 50%);
+    --alert-light-bg: rgb(170 178 189 / 25%);
+    --alert-light-text: var(--dark);
+    --alert-light-border: rgb(170 178 189 / 50%);
+    --alert-dark-bg: rgb(18 21 30 / 25%);
+    --alert-dark-text: var(--light);
+    --alert-dark-border: rgb(18 21 30 / 50%);
+
+    /* BACK-TO-TOP */
+
+    --btt-bg: var(--red);
+    --btt-text: var(--yellow);
+    --btt-border: var(--alert-danger-border);
+    --btt-radius: 1rem;
+    --btt-shadow: var(--dark);
+
+    /* BLOCKQUOTES */
+
+    --blockquote-bg: rgb(56 66 94 / 50%);
+    --blockquote-color: var(--subdued);
+    --blockquote-border: rgb(56 66 94);
+    --blockquote-radius: .45rem;
+    --blockquote-highlight: var(--yellow);
+    --blockquote-shadow: var(--dark);
+
+    /* BORDERS */
+
+    --main-border-color: var(--secondary-bg);
+
+    /* BREADCRUMBS */
+
+    --crumb-bg: var(--tertiary-bg);
+    --crumb-color: var(--subdued);
+    --crumb-active-color: var(--red);
+    --crumb-link-color: var(--orange);
+    --crumb-hover-color: var(--red);
+
+    /* BUTTONS */
+
+    --btn-bg: rgb(210 0 0 / 50%);
+    --btn-text: var(--yellow);
+    --btn-border: rgb(210 0 0 / 25%);
+    --btn-radius: .45rem;
+    --btn-shadow: var(--dark);
+
+    /* CARDS */
+
+    --card-bg1: var(--secondary-bg);
+    --card-text1: var(--light);
+    --card-border1: rgb(56 66 94 / 50%);
+    --card-bg2: var(--tertiary-bg);
+    --card-text2: var(--light);
+    --card-border2: rgb(25 28 36 / 75%);
+    --card-bg3: var(--primary-bg);
+    --card-text3: var(--smoke);
+    --card-border3: rgb(33 37 41 / 75%);
+    --card-header-bg1: rgb(210 0 0 / 50%);
+    --card-header-text1: var(--white);
+    --card-header-bg2: var(--light);
+    --card-header-text2: var(--dark);
+    --card-header-bg3: var(--secondary-bg);
+    --card-header-text3: var(--light);
+    --card-border-radius: .45rem;
+    --card-box-shadow: var(--dark);
+
+    /* HORIZONTAL RULES */
+
+    --hr1: var(--secondary-bg);
+    --hr2: var(--tertiary-bg);
+    --hr3: var(--primary-bg);
+
+    // KBD
+    --kbd-bg: var(--secondary-bg);
+    --kbd-text: var(--light);
+    --kbd-wrap: var(--light);
+
+    /* LABEL */
+    --label-color: var(--light);
+
+    /* LINKS */
+
+    --link-color: var(--white);
+    --link-hover: var(--red);
+    --link-active: var(--orange);
+    --link-disabled: var(--subdued);
+
+    /* NAVBAR */
+
+    --navbar-bg: var(--secondary-bg);
+    --navbar-text: var(--smoke);
+    --navbar-muted: rgb(237 220 201 / 50%);
+    --navbar-shadow: var(--dark);
+    --navbar-link: var(--white);
+    --navbar-hover: var(--red);
+    --navbar-active: var(--orange);
+
+    /* NAVBAR - DROPDOWN */
+
+    --navbar-dd-bg: lighten(var(--secondary-bg), 50%);
+    --navbar-dd-text: var(--smoke);
+    --navbar-dd-muted: var(--navbar-muted);
+    --navbar-dd-border: lighten(var(--secondary-bg), 75%);
+    --navbar-dd-radius: .45rem;
+    --navbar-dd-shadow: var(--dark);
+    --navbar-dd-link: var(--white);
+    --navbar-dd-hover: var(--red);
+    --navbar-dd-active: var(--orange);
+    --navbar-dd-separator: var(--secondary-bg);
+    --navbar-search-bg: var(--secondary-bg);
+    --navbar-search-border: darken(var(--secondary-bg), 50%);
+    --navbar-search-icon: var(--subdued);
+    --navbar-search-focus: var(--secondary-bg);
+    --navbar-search-focus-border: var(--orange);
+    --navbar-search-focus-text: var(--orange);
+    --navbar-search-focus-icon: var(--orange);
+    --navbar-search-holder-text: var(--subdued);
+
+    /* SIDEBAR */
+
+    --sidebar-bg: var(--secondary-bg);
+    --sidebar-text: var(--light);
+    --sidebar-muted: var(--subdued);
+    --sidebar-link: var(--white);
+    --sidebar-hover: var(--red);
+    --sidebar-active: var(--orange);
+
+    /* TABLES */
+    --table-header-bg1: var(--primary-bg);
+    --table-header-bg2: var(--secondary-bg);
+    --table-header-text1: var(--white);
+    --table-header-text2: var(--white);
+    --table-row-bg1: lighten(var(--primary-bg), 100%);
+    --table-row-bg2: var(--primary-bg);
+    --table-row-text1: var(--light);
+    --table-row-text2: var(--light);
+    --table-row-hover1: var(--secondary-bg);
+    --table-row-hover2: var(--primary-bg);
+    --table-caption: var(--subdued);
+
+    /* TAGS */
+    --tag-bg: var(--primary-bg);
+    --tag-text: var(--light);
+    --tag-hover-bg: var(--primary-bg);
+    --tag-hover-border: var(--yellow);
+    --tag-muted: var(--subdued);
+    --tag-border: var(--secondary-bg);
+    --tag-shadow: var(--dark);
+    --tag-dash: var(--red);
+
+} /* dark-scheme */

@@ -1,0 +1,60 @@
+@charset "utf-8";
+
+// FONTS
+
+$base-font-family: 'Cormorant Infant', serif !default;
+$base-font-weight: 400 !default;
+$base-font-size: 13px !default;
+$base-line-height: 1.2rem !default;
+
+$headings-font-family: 'Cormorant Unicase', serif !default;
+$headings-font-weight: 400 !default;
+
+$code-font-family: 'Xanh Mono', monospace !default;
+$code-font-weight: 400 !default;
+
+$spacing: 30px !default;
+
+// LINKS
+
+$link-decoration: 'none' !default;
+$link-hover-decoration: 'none' !default;
+
+// BREADCRUMBS
+
+$crumb-link-decoration: none !default;
+$crumb-hover-decoration: none !default;
+
+// BORDERS
+
+$border-width: 1px !default;
+
+$border-radius: .45rem !default;
+$border-radius-sm: .1875rem !default;
+$border-radius-lg: .9375rem !default;
+$border-radius-pill: 1rem !default;
+
+// CODE
+
+$code-font-height: .85rem !default;
+
+// COPYRIGHT
+
+$copyright-height: 2.5rem !default;
+
+// FOOTER
+
+$footer-height: 5rem !default;
+
+// NAVBAR
+
+$navbar-height: 3rem !default;
+$navbar-padding-x: .5rem  !default;
+$navbar-padding-y: .5rem  !default;
+
+$navbar-search-max-width: 210px !default;
+
+// SIDEBAR
+$sidebar-width: 260px !default;
+$sidebar-width-sm: 210px !default;
+$sidebar-width-lg: 350px !default;
