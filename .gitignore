@@ -13,6 +13,7 @@
 _site
 vendor
 
+
 # rubygem
 *.gem
 Gemfile.lock
@@ -20,3 +21,4 @@ Gemfile.lock
 # npm dependencies
 node_modules
 package-lock.json
+!/assets/lib/bootstrap-5.0.2/scss/vendor/
