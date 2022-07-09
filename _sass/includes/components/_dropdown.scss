@@ -1,0 +1,16 @@
+//==================================================================
+// DROPDOWN
+//==================================================================
+
+.dropup, .dropend, .dropdown, .dropstart { position: relative; }
+
+.dropdown-toggle {
+    white-space: nowrap;
+    // generate the caret automatically
+    @include caret();
+}
+
+// dropdown menu
+.dropdown-menu {
+
+}

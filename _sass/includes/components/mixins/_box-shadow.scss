@@ -1,0 +1,9 @@
+//==================================================================
+// BOX-SHADOW MIXIN
+//==================================================================
+
+@mixin box-shadow( $x: 0.25rem, $y: 0.25rem, $blur: 0.5rem, $spread: 0.5rem, $color: var(--dark), $opacity: 1, $inset: false ) {
+    -webkit-box-shadow: $x $y $blur $spread rgba($color, $opacity);
+       -moz-box-shadow: $x $y $blur $spread rgba($color, $opacity);
+            box-shadow: $x $y $blur $spread rgba($color, $opacity);
+}

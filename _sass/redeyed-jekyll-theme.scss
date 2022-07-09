@@ -1,30 +1,17 @@
-/*
- * Stylesheets for redeyed-jekyll-theme
- *
- * RedEyed Jekyll Theme v0.1.0 (https://github.com/RedEyed-RPG/redeyed-jekyll-theme)
- * Copyright © 2022 ~ Ragdata & RedEyed RPG
- * MIT Licensed
- */
-
-// -----------------------------------------------------------------
-// IMPORT BOOTSTRAP FUNCTIONS & VARIABLES
-// -----------------------------------------------------------------
-@import "lib/bootstrap-5.0.2/scss/functions";
-@import "lib/bootstrap-5.0.2/scss/variables";
-
-// -----------------------------------------------------------------
-// IMPORT THEME COLORS
-// -----------------------------------------------------------------
-@import
-    "theme/scheme-brew",
-    "theme/scheme-dark",
-    "theme/scheme-light";
+//==================================================================
+// Stylesheets for redeyed-jekyll-theme
+//
+// RedEyed Jekyll Theme v0.1.0 (https://github.com/RedEyed-RPG/redeyed-jekyll-theme)
+// Copyright © 2022 ~ Ragdata & RedEyed RPG
+// MIT Licensed
+//==================================================================
 
 // -----------------------------------------------------------------
 // IMPORT THEME MIXINS & VARIABLES
 // -----------------------------------------------------------------
-@import "addon/mixins";
+@import "theme/mixins";
 @import "theme/variables";
+@import "theme/common";
 
 // -----------------------------------------------------------------
 // IMPORT MAIN BOOTSTRAP SCSS
@@ -36,6 +23,38 @@
 // -----------------------------------------------------------------
 @import
     "variables-hook",
-    "layout/base",
-    "addon/alerts",
-    "addon/typography";
+    "layouts/breakpoints",
+    "layouts/base";
+
+@if $layout == 'default' or $layout == 'panel-none' {
+    @import "layouts/panel-none";
+} @else if $layout == 'panel-both' {
+    @import "layouts/panel-both";
+} @else if $layout == 'panel-left' {
+    @import "layouts/panel-left";
+} @else if $layout == 'panel-right' {
+    @import "layouts/panel-right";
+} @else if $layout == 'post' {
+    @import "layouts/post";
+} @else if $layout == 'archive' {
+    @import "layouts/archive";
+} @else if $layout == 'categories' {
+    @import "layouts/categories";
+} @else if $layout == 'category' {
+    @import "layouts/category";
+} @else if $layout == 'error' {
+    @import "layouts/error";
+} @else if $layout == 'page' {
+    @import "layouts/page";
+} @else if $layout == 'tag' {
+    @import "layouts/tag";
+} @else if $layout == 'tags' {
+    @import "layouts/tags";
+}
+
+
+
+
+@import
+    "theme/typography",
+    "includes/components/alert";

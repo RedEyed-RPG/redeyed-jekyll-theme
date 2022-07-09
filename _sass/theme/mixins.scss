@@ -1,0 +1,103 @@
+//==================================================================
+// CUSTOM SCSS MODULES & MIXINS
+//==================================================================
+
+@import "../includes/components/mixins";
+
+//%tag-hover {
+//    background: var(--tag-hover-bg);
+//    border-color: var(--tag-hover-border);
+//    transition: border-color 0.35s ease-in-out, background 0.35s ease-in-out;
+//}
+//
+//%table-cell {
+//    padding: 0.4rem 1rem;
+//    font-size: 0.95rem;
+//    white-space: nowrap;
+//}
+//
+//%no-bottom-border { border-bottom: none; }
+//
+//%normal-font-style { font-style: normal; }
+//
+//
+//%sidebar-links {
+//    color: var(--sidebar-link);
+//    user-select: none;
+//}
+//
+//%alert {
+//    display: flex;
+//    border-left: 0;
+//    border-radius: 6px;
+//    padding: 0.75rem 1.2rem;
+//}
+//
+
+//@mixin align-center {
+//    position: relative;
+//    left: 50%;
+//    -webkit-transform: translateX(-50%);
+//    -ms-transform: translateX(-50%);
+//    transform: translateX(-50%);
+//}
+
+%clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+%clickable-transition { transition: color 0.35s ease-in-out; }
+
+%cursor { cursor: pointer; }
+
+%d-inline { display: inline !important; }
+%d-inline-block { display: inline-block !important; }
+%d-block { display: block !important; }
+%d-grid { display: grid !important; }
+%d-table { display: table !important; }
+%d-table-row { display: table-row !important; }
+%d-table-cell { display: table-cell !important; }
+%d-flex { display: flex !important; }
+%d-inline-flex { display: inline-flex !important; }
+%d-none { display: none !important; }
+
+%justify-content-start { justify-content: flex-start !important; }
+%justify-content-end { justify-content: flex-end !important; }
+%justify-content-center { justify-content: center !important; }
+%justify-content-between { justify-content: space-between !important; }
+%justify-content-around { justify-content: space-around !important; }
+%justify-content-evenly { justify-content: space-evenly !important; }
+
+%no-cursor { user-select: none; }
+
+%no-text-decoration { text-decoration: none; }
+
+%overflow-auto { overflow: auto !important; }
+%overflow-hidden { overflow: hidden !important; }
+%overflow-visible { overflow: visible !important; }
+%overflow-scroll { overflow: scroll !important; }
+
+@mixin mt-mb($value) {
+    margin-top: $value;
+    margin-bottom: $value;
+}
+
+@mixin ml-mr($value) {
+    margin-left: $value;
+    margin-right: $value;
+}
+
+@mixin pt-pb($value) {
+    padding-top: $value;
+    padding-bottom: $value;
+}
+
+@mixin pl-pr($value) {
+    padding-left: $value;
+    padding-right: $value;
+}
+
+@mixin relative-font-size($ratio) { font-size: $font-size-base * $ratio; }
+

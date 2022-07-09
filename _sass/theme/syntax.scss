@@ -1,9 +1,9 @@
-/*
- * SYNTAX HIGHLIGHTER
- */
+//==================================================================
+// SYNTAX HIGHLIGHTER
+//==================================================================
 
-@import "../theme/syntax-light";
-@import "../theme/syntax-dark";
+@import "syntax-light";
+@import "syntax-dark";
 
 html {
     @media (prefers-color-scheme: light) {

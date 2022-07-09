@@ -1,6 +1,6 @@
-/*
- * DARK MODE THEME
- */
+//==================================================================
+// DARK MODE SCHEME
+//==================================================================
 
 @mixin dark-scheme {
 
@@ -20,7 +20,7 @@
     --black: #000000;
     --white: #FFFFFF;
     --smoke: #EDDCC9;
-    --darkslategray: #2F4F4F;
+    --darkslategray: #8d8d8d;
     --dodger-blue: #1E90FF;
     --cyan-cobalt: #1D58A5;
 
@@ -133,6 +133,11 @@
     --card-border-radius: .45rem;
     --card-box-shadow: var(--dark);
 
+    /* COMPONENTS */
+
+    --component-active-color: var(--orange);
+    --component-active-bg: var(--primary-bg);
+
     /* HORIZONTAL RULES */
 
     --hr1: var(--secondary-bg);
@@ -163,6 +168,10 @@
     --navbar-link: var(--white);
     --navbar-hover: var(--red);
     --navbar-active: var(--orange);
+    --navbar-brand-color: var(--smoke);
+    --navbar-brand-hover: var(--red);
+    --navbar-toggler-color: var(--smoke);
+    --navbar-toggler-border: var(--secondary-bg);
 
     /* NAVBAR - DROPDOWN */
 
@@ -199,7 +208,7 @@
     --table-header-bg2: var(--secondary-bg);
     --table-header-text1: var(--white);
     --table-header-text2: var(--white);
-    --table-row-bg1: lighten(var(--primary-bg), 100%);
+    --table-row-bg1: var(--tertiary-bg);
     --table-row-bg2: var(--primary-bg);
     --table-row-text1: var(--light);
     --table-row-text2: var(--light);

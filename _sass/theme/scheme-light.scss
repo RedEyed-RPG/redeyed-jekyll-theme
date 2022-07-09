@@ -1,6 +1,6 @@
-/*
- * LIGHT MODE THEME
- */
+//==================================================================
+// LIGHT MODE SCHEME
+//==================================================================
 
 @mixin light-scheme {
 
@@ -132,6 +132,11 @@
     --card-header-text3: var(--light);
     --card-border-radius: .45rem;
     --card-box-shadow: var(--dark);
+
+    /* COMPONENTS */
+
+    --component-active-color: var(--orange);
+    --component-active-bg: var(--primary-bg);
 
     /* HORIZONTAL RULES */
 

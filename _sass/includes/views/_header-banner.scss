@@ -1,0 +1,57 @@
+//==================================================================
+// HEADER - BANNER
+//==================================================================
+
+//------------------------------------------------------------------
+// VIEW STYLES
+//------------------------------------------------------------------
+
+header {
+    @extend %d-flex;
+    @extend %justify-content-center;
+
+    &#banner {
+        div#header { @extend .container-fluid; }
+    }
+}
+
+// RESPONSIVE DESIGN:
+//
+// {sidebar, content, panel} >= 1120px screen width
+// {sidebar, content} >= 850px
+// {content} <= 849px
+
+// X-Small Devices (portrait phones, <576px)
+// Hide Sidebar & Panel
+@media all and (max-width: $breakpoint-sm) {
+
+}
+
+// Small Devices (landscape phones, 576px+)
+// Hide Sidebar & Panel
+@media all and (max-width: $breakpoint-md) {
+
+}
+
+// Medium Devices (tablets, 768px+)
+// Hide Panel
+@media all and (max-width: $breakpoint-lg) {
+
+}
+
+// Large Devices (laptops, 992px+)
+// Show all
+@media all and (max-width: $breakpoint-xl) {
+
+}
+
+// Larger Devices (desktops, 1200px+)
+// Show all - 2 col possibility
+@media all and (max-width: $breakpoint-xxl) {
+
+}
+
+// Largest Devices (larger desktops, 1400px+)
+@media all and (min-width: $breakpoint-xxl) {
+
+}

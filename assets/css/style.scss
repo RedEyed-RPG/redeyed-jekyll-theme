@@ -3,6 +3,59 @@ title: false
 styles: true
 ---
 
+// -----------------------------------------------------------------
+// IMPORT BOOTSTRAP FUNCTIONS & VARIABLES
+// -----------------------------------------------------------------
+@import "../../_sass/lib/bootstrap-5.0.2/scss/functions";
+@import "../../_sass/lib/bootstrap-5.0.2/scss/variables";
+
+// -----------------------------------------------------------------
+// IMPORT THEME COLORS
+// -----------------------------------------------------------------
+@import
+"../../_sass/theme/scheme-brew",
+"../../_sass/theme/scheme-dark",
+"../../_sass/theme/scheme-light";
+
+
+html {
+    @media (prefers-color-scheme: light) {
+        &:not([data-mode]),
+        &[data-mode=light] {
+            @include light-scheme;
+        }
+
+        &[data-mode=dark] {
+            @include dark-scheme;
+        }
+    }
+
+    @media (prefers-color-scheme: dark) {
+        &:not([data-mode]),
+        &[data-mode=dark] {
+            @include dark-scheme;
+        }
+
+        &[data-mode=light] {
+            @include light-scheme;
+        }
+    }
+}
+
+$layout: {{ page.layout | default: 'default' }};
+
+$header: {{ page.header | default: false }};
+
+$top-panel: {{ page.top-panel }};
+
+$bottom-panel: {{ page.bottom-panel }};
+
+$foot-panel: {{ page.foot-panel }};
+
+$to-top: {{ page.to-top | default: site.to-top | default: false }}
+
+$content-width: {{ page.content-width | default: site.content-width | default: '920px' }};
+
 @import "{{ site.theme }}";
 
 /* APPEND CUSTOM STYLES BELOW */
