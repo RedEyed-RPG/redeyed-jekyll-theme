@@ -1,54 +1,163 @@
-[![Gem Version](https://badge.fury.io/rb/redeyed-jekyll-theme.svg)](https://badge.fury.io/rb/redeyed-jekyll-theme)
+<div align="center">
 
-# redeyed-jekyll-theme
+<img src="https://i.imgur.com/ge61nXL.png" alt="RedEyed RPG" />
 
-Welcome to your new Jekyll theme! In this directory, you'll find the files you need to be able to package up your theme into a gem. Put your layouts in `_layouts`, your includes in `_includes`, your sass files in `_sass` and any other assets in `assets`.
+# redeyed-jekyll-theme<br />v0.1.2
 
-To experiment with this code, add some sample content and run `bundle exec jekyll serve` – this directory is setup just like a Jekyll site!
+<em>A versatile, responsive, and powerful Jekyll Theme designed for a gaming site</em>
 
-TODO: Delete this and the text above, and describe your gem
+[**https://www.redeyed-rpg.com**](https://www.redeyed-rpg.com)
 
+#### [Contributing](https://github.com/RedEyed-RPG/redeyed-jekyll-theme/wiki/Contributor's-Guide) &middot; [Community Guidelines](https://github.com/RedEyed-RPG/redeyed-jekyll-theme/wiki/Contributor-Covenant-&-Code-of-Conduct) &middot; [Submit an Issue](https://github.com/RedEyed-RPG/redeyed-jekyll-theme/issues/new/choose) &middot; [Ask a Question](https://github.com/RedEyed-RPG/redeyed-jekyll-theme/discussions)
 
-## Installation
+<a href="https://patreon.com/ragdata"><img src="assets/img/social/patreon.svg" height="24" width="24"></a> &nbsp;
+<a href="https://twitter.com/RedeyedRPG"><img src="assets/img/social/twitter.svg" height="24" width="24"></a> &nbsp;
+<a href="https://reddit.com/r/redeyed"><img src="assets/img/social/reddit.svg" height="24" width="24" alt="RedEyed-RPG Subreddit"></a> &nbsp;
+<a href="https://facebook.com/RedeyedRPG"><img src="assets/img/social/facebook.svg" height="24" width="24"></a> &nbsp;
+<a href="https://redeyed-rpg.tumblr.com"><img src="assets/img/social/tumblr.svg" height="24" width="24"></a> &nbsp;
+<a href="https://github.com/redeyed-rpg"><img src="assets/img/social/github.svg" height="24" width="24"></a> &nbsp;
+<a href="https://www.guilded.gg/i/27dYX5Xk"><img src="assets/img/social/guilded.svg" height="24" width="24"></a>
 
-Add this line to your Jekyll site's `Gemfile`:
+[![Gem Version](https://badge.fury.io/rb/redeyed-jekyll-theme.svg)](https://badge.fury.io/rb/redeyed-jekyll-theme) &nbsp;
+[![Build Status](https://github.com/RedEyed-RPG/redeyed-jekyll-theme/workflows/build/badge.svg?branch=master&event=push)](https://github.com/RedEyed-RPG/redeyed-jekyll-theme/actions?query=branch%3Amaster+event%3Apush) &nbsp;
+[![GitHub license](https://img.shields.io/github/license/RedEyed-RPG/redeyed-jekyll-theme.svg)](https://github.com/RedEyed-RPG/redeyed-jekyll-theme/blob/master/LICENSE) &nbsp;
+[![Repo Code Weight](https://img.shields.io/github/languages/code-size/RedEyed-RPG/redeyed-jekyll-theme)](https://github.com/RedEyed-RPG/redeyed-jekyll-theme)
+<br/>
+[![Support Me @ Patreon](https://img.shields.io/badge/Patreon-Ragdata-%23FF424D?logo=patreon)](https://patreon.com/ragdata) &nbsp;
+[![Support Me @ GitHub](https://img.shields.io/badge/Github-Sponsor_This_Project-blue?logo=Github)](https://github.com/sponsors/Ragdata) &nbsp;
+[![Buy me a Ko-fi](https://img.shields.io/badge/Ko--fi-Ragdata-%23FF5E5B?logo=ko-fi)](https://ko-fi.com/ragdata)
+<br/><br/>
+[![](https://img.shields.io/badge/Guilded-Support%20Server%20Online-%23F5C400?logo=guilded)](https://www.guilded.gg/i/27dYX5Xk)
 
-```ruby
-gem "redeyed-jekyll-theme"
+</div>
+
+## Features
+
+- Localized Layout
+- Dark/Light Theme Mode
+- Pinned Posts
+- Hierarchical Categories
+- Last Modified Date for Posts
+- Table of Contents
+- Auto-Generated Related Posts
+- Syntax Highlighting
+- Mathematical Expressions
+- Disqus/Utterances/Giscus/Gitment Comments
+- Site Search
+- Atom Feeds
+- Google Analytics
+- SEO & Performance Optimisation
+
+## Introduction
+
+<div align="center"><img src="assets/img/banner.svg"></div>
+
+> <p align="center">YOU SHOULD ONLY FORK THIS THEME IF YOU ARE A DEVELOPER INTENDING TO MODIFY IT FOR YOUR OWN USE</p>
+
+If you want to use the theme just as it is on your own website, you have two options:
+
+- To install this theme as part of a brand-new Jekyll site, you want the [RedEyed Jumpstarter]().
+- To add this theme to your existing website, see [this documentation]().
+
+## 📚 Developer's Quick Start
+
+Before you start, please ensure that you've followed the instructions in the [Jekyll Docs](https://jekyllrb.com/docs/installation/) to complete the installation of `Ruby`, `RubyGems`, `Jekyll`, and `Bundler`.  You also need to have the following packages installed:
+
+- Git
+- Node.js & npm (I recommend [NVM](https://github.com/nvm-sh/nvm) regardless of your platform)
+
+### 📘 1. Fork the Project
+
+The first step you have already hopefully completed before getting to this part of the instructions - you need to fork the project from Github using your favourite tools or the Github website itself.
+
+### 📘 2. Rename & Modify the Gemspec
+
+The next thing you'll want to do is rename the `redeyed-jekyll-theme.gemspec` file to reflect the name of your own project.  Then, open that file and take care of the following details:
+
+- spec.name
+- spec.version
+- spec.authors
+- spec.email
+- spec.summary
+- spec.homepage
+- spec.license
+- spec.metadata
+
+### 📘 3. Install standard-version
+
+(Yes, I know it's deprecated - I'll change this as soon as I find a suitable replacement)
+
+Install `standard-version` as a global `bin`:
+
+```console
+$ npm i -g standard-version
 ```
 
-And add this line to your Jekyll site's `_config.yml`:
+### 📘 4. Install Commitlint & Husky
 
-```yaml
-theme: redeyed-jekyll-theme
+> If you don't need to do things your own way, Commitlint and Husky can be installed using the script I've included with this package:
+> ```console
+> $ bash bin/install-commitlint
+> ```
+> Otherwise, follow each step below and make your changes as necessary
+
+Install `commitlint` & `husky`
+
+```console
+$ npm i --save-dev --location=global @commitlint/cli @commitlint/config-conventional husky
 ```
 
-And then execute:
+Configure `commitlint` to use conventional config:
 
-    $ bundle
+```console
+$ echo "module.exports = {extends: ['@commitlint/config-conventional']}" > .commitlint.config.js
+```
 
-Or install it yourself as:
+And then enable `husky`:
 
-    $ gem install redeyed-jekyll-theme
+```console
+$ husky install
+```
 
-## Usage
+Add a husky commit hook:
 
-TODO: Write usage instructions here. Describe your available layouts, includes, sass and/or assets.
+```shell
+cat <<EEE > .husky/commit-msg
+#!/usr/bin/env bash
+. "\$(dirname "\$0")/_/husky.sh"
+npx --no -- commitlint --edit "\${1}"
+EEE
+```
 
-## Contributing
+Make the hook executable:
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/hello. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+```console
+$ chmod a+x .husky/commit-msg
+```
 
-## Development
+Make sure you check out the [Contributor's Guide - Appendices](.github/CONTRIBUTING.md#appendix-a-commitlint-commit-types) for tips on how to use commitlint, why it's useful, and examples of how to structure your own commit messages to make the best use of the package.
 
-To set up your environment to develop this theme, run `bundle install`.
+### 📘 5. Install Dependencies
 
-Your theme is setup just like a normal Jekyll site! To test your theme, run `bundle exec jekyll serve` and open your browser at `http://localhost:4000`. This starts a Jekyll server using your theme. Add pages, documents, data, etc. like normal to test your theme's contents. As you make modifications to your theme and to your content, your site will regenerate and you should see the changes in the browser after a refresh, just like normal.
+Install Jekyll dependencies:
+
+```console
+$ bundle install
+```
+
+### 📘 6. Start Local Server
+
+Then, start your local server in watch mode:
+
+```console
+$ bundle exex jekyll serve --watch
+```
+
+Now, open your browser to http://localhost:4000 and make your changes
 
 When your theme is released, only the files in `_layouts`, `_includes`, `_sass` and `assets` tracked with Git will be bundled.
 To add a custom directory to your theme-gem, please edit the regexp in `redeyed-jekyll-theme.gemspec` accordingly.
 
-## License
+## 📋 License
 
 The theme is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
-
