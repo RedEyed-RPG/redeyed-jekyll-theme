@@ -2,11 +2,11 @@
 layout: compress
 ---
 <!DOCTYPE html>
-{% include elements/lang.html %}
-{% include elements/options.html %}
+{% include components/lang.html %}
+{% include components/options.html %}
 {% capture prefer_mode %}
     {% if site.theme_mode %}
-        data-mode="{{ site.theme_mode }}"
+        data-mode="{{ page.theme_mode | default: site.theme_mode | default: 'dark' }}"
     {% endif %}
 {% endcapture %}
 <html lang="{{ lang }}"{{ prefer_mode }}>
@@ -21,8 +21,8 @@ layout: compress
                 {% include views/header-banner.html %}
             {% endif %}
         {% endif %}
-        {% include elements/navbar.html %}
-        {% include elements/breadcrumbs.html %}
+        {% include components/navbar.html %}
+        {% include components/breadcrumbs.html %}
         {% if page.top-panel %}
             {% if page.top-panel == "full" %}
                 {% include views/panel-top-full.html %}
@@ -34,11 +34,11 @@ layout: compress
                 {% include views/panel-top-4.html %}
             {% endif %}
         {% endif %}
-        <div id="main-wrapper" class="d-flex justify-content-center">
-            <div id="main" class="container-fluid">
+        <main id="main-wrapper">
+            <div id="main">
                 {{ content }}
             </div>
-        </div>
+        </main>
         {% if page.bottom-panel %}
             {% include views/panel-bottom.html %}
         {% endif %}
@@ -56,8 +56,8 @@ layout: compress
         {% include views/footer.html %}
         {% include views/copyright.html %}
         <div id="mask"></div>
-        {% if page.to-top %}{% include elements/back-to-top.html %}{% endif %}
-        {% include elements/search-results.html %}
+        {% if page.to-top %}{% include components/back-to-top.html %}{% endif %}
+        {% include components/search-results.html %}
         {% if site.pwa.enabled %}
         <div id="notification" class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-animation="true" data-autohide="false">
             <div class="toast-header">
@@ -73,7 +73,7 @@ layout: compress
             </div>
         </div>
         {% endif %}
-        {% include elements/search-loader.html %}
-        {% include elements/javascript.html %}
+        {% include components/search-loader.html %}
+        {% include components/javascript.html %}
     </body>
 </html>
