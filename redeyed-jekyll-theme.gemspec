@@ -2,16 +2,16 @@
 
 Gem::Specification.new do |spec|
     spec.name          = "redeyed-jekyll-theme"
-    spec.version       = "0.1.2"
+    spec.version       = "0.1.3
     spec.authors       = ["Ragdata"]
     spec.email         = ["ragdata@redeyed-rpg.com"]
 
-    spec.summary       = "(WIP) A versatile, responsive theme built for a site about Dungeons & Dragons.  Please DO NOT consider this to be anything close to a production release just yet.  I'm learning as I go here."
+    spec.summary       = "(WIP) A versatile, responsive theme built for a site about Dungeons & Dragons.  Please DO NOT consider this to be anything close to a production release just yet."
     spec.homepage      = "https://github.com/RedEyed-RPG/redeyed-jekyll-theme"
     spec.license       = "MIT"
 
     spec.files         = `git ls-files -z`.split("\x0").select { |f|
-        f.match(%r!^((_(data|drafts|includes|javascript|layouts|plugins|posts|sass)|assets|src)\/|_config|README|LICENSE|sw|manifest)!i)
+        f.match(%r!^((_(data|drafts|includes|layouts|plugins|posts|sass)|assets|src)\/|_config|README|LICENSE)!i)
     }
 
     spec.metadata = {
@@ -23,8 +23,10 @@ Gem::Specification.new do |spec|
         "plugin_type" => "theme"
     }
 
-    spec.required_ruby_version = ">= 2.5"
+    spec.add_development_dependency "bundler", ">= 1.6", "< 3.0"
+    spec.add_development_dependency "rake", ">= 12.0", "< 13.0"
 
+    spec.add_runtime_dependency "html-proofer", "~> 3", ">= 3.19"
     spec.add_runtime_dependency "jekyll", "~> 4.2"
     spec.add_runtime_dependency "jemoji", "~> 0.12"
     spec.add_runtime_dependency "jekyll-toc", "~> 0.17"
@@ -36,14 +38,10 @@ Gem::Specification.new do |spec|
     spec.add_runtime_dependency "jekyll-paginate", "~> 1.1"
     spec.add_runtime_dependency "jekyll-spaceship", "~> 0.2"
     spec.add_runtime_dependency "jekyll-pluralize", "~> 0.0"
-#     spec.add_runtime_dependency "jekyll-paginate-v2", "~> 3.0"
-#     spec.add_runtime_dependency "jekyll-include-cache", "~> 0.2"
+    spec.add_runtime_dependency "jekyll-contentblocks", "~> 1", ">= 1.2"
     spec.add_runtime_dependency "jekyll-redirect-from", "~> 0.16"
     spec.add_runtime_dependency "jekyll-email-protect", "~> 1.1"
+    spec.add_runtime_dependency "jekyll-material-icon-tag", "~> 1", ">= 1.1"
     spec.add_runtime_dependency "jekyll-tagging-related_posts", "~> 1.2"
-#     spec.add_runtime_dependency
-#     spec.add_runtime_dependency
-#     spec.add_runtime_dependency
-#     spec.add_runtime_dependency
-#     spec.add_development_dependency
+
 end
