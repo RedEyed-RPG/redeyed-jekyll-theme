@@ -1,1 +1,9 @@
-{% comment %} HEADER-BANNER {% endcomment %}
+<!-- HEADER-BANNER -->
+
+<header id="banner">
+    <div id="header">
+        {% ifhascontent header %}
+            {% contentblock header %}
+        {% endifhascontent %}
+    </div>
+</header>

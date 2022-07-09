@@ -1,1 +1,9 @@
-{% comment %} HEADER-WIDE {% endcomment %}
+<!-- HEADER-WIDE -->
+
+<header id="wide">
+    <div id="header">
+        {% ifhascontent header %}
+            {% contentblock header %}
+        {% endifhascontent %}
+    </div>
+</header>

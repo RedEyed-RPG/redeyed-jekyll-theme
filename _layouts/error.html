@@ -2,8 +2,8 @@
 layout: compress
 ---
 <!DOCTYPE html>
-{% include elements/lang.html %}
-{% include elements/options.html %}
+{% include components/lang.html %}
+{% include components/options.html %}
 {% capture prefer_mode %}
     {% if site.theme_mode %}
         data-mode="{{ site.theme_mode }}"
@@ -12,7 +12,7 @@ layout: compress
 <html lang="{{ page.lang | default: site.lang | default: "en" }}"{{ prefer_mode }}>
     {% include head.html %}
     <body data-spy="scroll" data-target="#toc" data-navbar-visible="true">
-        {% include elements/navbar.html %}
+        {% include components/navbar.html %}
         <div id="main-wrapper" class="d-flex justify-content-center">
             <div id="main" class="container-fluid">
                 {{ content }}
@@ -21,7 +21,7 @@ layout: compress
         {% include views/footer.html %}
         {% include views/copyright.html %}
         <div id="mask"></div>
-        {% include elements/search-results.html %}
+        {% include components/search-results.html %}
         {% if site.pwa.enabled %}
         <div id="notification" class="toast" role="alert" aria-live="assertive" aria-atomic="true"
              data-animation="true" data-autohide="false">
@@ -38,7 +38,7 @@ layout: compress
             </div>
         </div>
         {% endif %}
-        {% include elements/search-loader.html %}
-        {% include elements/javascript.html %}
+        {% include components/search-loader.html %}
+        {% include components/javascript.html %}
     </body>
 </html>

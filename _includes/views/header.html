@@ -1,1 +1,9 @@
-{% comment %} HEADER-REGULAR {% endcomment %}
+<!-- HEADER-REGULAR -->
+
+<header id="regular">
+    <div id="header">
+        {% ifhascontent header %}
+            {% contentblock header %}
+        {% endifhascontent %}
+    </div>
+</header>

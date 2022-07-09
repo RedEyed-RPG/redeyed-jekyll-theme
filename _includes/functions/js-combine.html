@@ -12,7 +12,7 @@
     {% elsif url contains '//' %}
         <script src="{{ url }}"></script>
     {% else %}
-        <script src="{{ url | relative_url }}"></script>
+            <script src="{{ url | relative_url }}"></script>
     {% endif %}
 {% endfor %}
 {% if combined_urls %}<script src="{{ combined_urls }}"></script>{% endif %}
