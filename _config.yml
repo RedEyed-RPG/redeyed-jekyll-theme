@@ -324,12 +324,11 @@ exclude:
     - '*.gem'
     - '*.gemspec'
     - .github
-    - README.md
-    - LICENSE
-    - Gemfile
-    - Gemfile.lock
+    - bin
     - gulpfile.js
+    - README.md
+    - CHANGELOG.md
+    - LICENSE
     - package*.json
     - node_modules
     - vendor
-    - bin
