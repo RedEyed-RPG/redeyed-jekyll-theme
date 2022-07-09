@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+npm i --save-dev --location=global @commitlint/cli @commitlint/config-conventional husky
+echo "module.exports = {extends: ['@commitlint/config-conventional']}" > commitlint.config.js
+husky install
+
+#cat <<EEE > .husky/commit-msg
+##!/bin/bash
+#. "\$(dirname "\$0")/_/husky.sh"
+#npx --no -- commitlint --edit "\${1}"
+#EEE
+#
+#chmod a+x .husky/commit-msg
