@@ -13,7 +13,7 @@ jobs:
             - name: Auto close issues that did not follow template
               uses: lucasbento/auto-close-issues@v1.0.2
               with:
-                  github-token: ${{ secrets.GITHUB_TOKEN }}
+                  github-token: ${{ secrets.ACCESS_TOKEN }}
                   issue-close-message: ":wave: Hi @${issue.user.login}, \n\nThis issue is being automatically closed because it does not follow the issue template.  If you edit this issue and make it compliant with the issue template, then it will be automatically reopened."
                   closed-issues-label: "🙁 NON-COMPLIANT"
 
