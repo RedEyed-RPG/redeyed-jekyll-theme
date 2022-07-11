@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://i.imgur.com/ge61nXL.png" alt="RedEyed RPG" />
+<img src="https://aever.net/images/brand/banner/RedEyedRPG-960-Red.png" alt="RedEyed RPG" />
 
 # redeyed-jekyll-theme<br />v0.1.2
 
