@@ -50,9 +50,7 @@
 
 ## Introduction
 
-<div align="center"><img src="assets/img/banner.svg"></div>
-
-> <p align="center">YOU SHOULD ONLY FORK THIS THEME IF YOU ARE A DEVELOPER INTENDING TO MODIFY IT FOR YOUR OWN USE</p>
+<div align="center"><img src="assets/img/banner.svg" widtH="100%"></div>
 
 If you want to use the theme just as it is on your own website, you have two options:
 
