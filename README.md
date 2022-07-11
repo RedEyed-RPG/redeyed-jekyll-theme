@@ -110,7 +110,7 @@ $ npm i --save-dev --location=global @commitlint/cli @commitlint/config-conventi
 Configure `commitlint` to use conventional config:
 
 ```console
-$ echo "module.exports = {extends: ['@commitlint/config-conventional']}" > .commitlint.config.js
+$ echo "module.exports = {extends: ['@commitlint/config-conventional']}" > ..commitlintrc.js
 ```
 
 And then enable `husky`:
