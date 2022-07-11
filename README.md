@@ -57,6 +57,32 @@ If you want to use the theme just as it is on your own website, you have two opt
 - To install this theme as part of a brand-new Jekyll site, you want the [RedEyed Jumpstarter]().
 - To add this theme to your existing website, see [this documentation]().
 
+## Installation
+
+Add this line to your Jekyll site's `Gemfile`:
+
+```console
+gem "redeyed-jekyll-theme"
+```
+
+And add this line to your Jekyll site's `_config.yml`:
+
+```console
+theme: redeyed-jekyll-theme
+```
+
+And then execute:
+
+```console
+$ bundle
+```
+
+Or install it yourself as:
+
+```console
+$ gem install redeyed-jekyll-theme
+```
+
 ## 📚 Developer's Quick Start
 
 Before you start, please ensure that you've followed the instructions in the [Jekyll Docs](https://jekyllrb.com/docs/installation/) to complete the installation of `Ruby`, `RubyGems`, `Jekyll`, and `Bundler`.  You also need to have the following packages installed:
