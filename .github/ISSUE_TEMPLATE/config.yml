@@ -1,0 +1,46 @@
+blank_issues_enabled: true
+contact_links:
+    - name: RedEyed Jekyll Theme Support @ GitHub
+      url: https://github.com/RedEyed-RPG/redeyed-jekyll-theme/discussions
+      about: Please ask and answer questions here.
+
+    - name: RedEyed Jekyll Theme Wiki
+      url: https://github.com/RedEyed-RPG/redeyed-jekyll-theme/wiki
+      about: Find documentation for the project here.
+
+    - name: RedEyed Jekyll Theme Issue Tracker
+      url: https://github.com/RedEyed-RPG/redeyed-jekyll-theme/issues
+      about: Submit Bug Reports and Feature Requests here.
+
+    - name:  Ragdata's Gaming Table (Guilded Server)
+      url: https://www.guilded.gg/i/EAJrGYr2
+      about: Find a host of resources in our community hub.
+
+    - name: RedEyed RPG @ Twitter
+      url: https://twitter.com/RedeyedRPG
+      about: Follow us on Twitter
+
+    - name: RedEyed RPG Subreddit
+      url: https://reddit.com/r/redeyed
+      about: Join the conversation at Reddit
+
+    - name: RedEyed RPG @ Facebook
+      url: https://facebook.com/RedeyedRPG
+      about: Follow us on Facebook
+
+    - name: RedEyed RPG Blog @ Tumblr
+      url: https://redeyed-rpg.tumblr.com
+      about: Read the latest on Tumblr
+
+    - name: PATREON | RAGDATA
+      url: https://www.patreon.com/ragdata
+      about: Support me @ Patreon
+
+    - name: Sponsor me @ Github
+      url: https://github.com/sponsors/Ragdata
+      about: Become a project supporter
+
+    - name: Buy me a Coffee
+      url: https://ko-fi.com/ragdata
+      about: Buy me a Coffee
+
