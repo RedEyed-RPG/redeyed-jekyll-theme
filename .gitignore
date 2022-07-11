@@ -6,7 +6,7 @@
 !.nojekyll
 !.travis.yml
 !.husky
-!.commitlintrc.json
+!.commitlintrc.js
 !.versionrc.json
 
 # bundler cache
@@ -22,4 +22,3 @@ Gemfile.lock
 node_modules
 package-lock.json
 !/_sass/lib/bootstrap-5.0.2/scss/vendor/
-
