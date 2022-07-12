@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
     spec.name          = "redeyed-jekyll-theme"
-    spec.version       = "0.1.3"
+    spec.version       = "0.1.2"
     spec.authors       = ["Ragdata"]
     spec.email         = ["ragdata@redeyed-rpg.com"]
 
