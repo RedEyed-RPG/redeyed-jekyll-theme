@@ -158,41 +158,35 @@ favicons:
 # 7. JEKYLL DEFAULTS
 ####################################################################
 defaults:
-    -
-        scope:
-            path: ""
-        values:
-            layout: default
-    -
-        scope:
-            path: _posts
-        values:
-            layout: post
-            comments: true
-            toc: true
-            permalink: /blog/:title:output_ext
-    -
-        scope:
-            path: ""
-            type: pages
-        values:
-            layout: page
-    -
-        scope:
-            path: _drafts
-        values:
-            comments: false
-            sitemap: false
-    -
-        scope:
-            path: assets/img/favicons
-        values:
-            swcache: true
-    -
-        scope:
-            path: assets/js/dist
-        values:
-            swcache: true
+    - scope:
+          path: ""
+      values:
+          layout: default
+    - scope:
+          path: _posts
+      values:
+          layout: post
+          comments: true
+          toc: true
+          permalink: /blog/:title:output_ext
+    - scope:
+          path: ""
+          type: pages
+      values:
+          layout: page
+    - scope:
+          path: _drafts
+      values:
+          comments: false
+          sitemap: false
+    - scope:
+          path: assets/img/favicons
+      values:
+          swcache: true
+    - scope:
+          path: assets/js/dist
+      values:
+          swcache: true
 
 ####################################################################
 # 8. INSTALLED GEMS
@@ -277,7 +271,7 @@ host: localhost
 show_dir_listing: false
 assets:
     self-host:
-        enabled: false
+        enabled: true
         env: development
 
 ####################################################################
