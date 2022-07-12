@@ -20,14 +20,16 @@
 
 
 [//]: # ([![Gem Version]&#40;https://badge.fury.io/rb/redeyed-jekyll-theme.svg&#41;]&#40;https://badge.fury.io/rb/redeyed-jekyll-theme&#41; &nbsp;)
-[![GitHub version](https://badge.fury.io/gh/RedEyed-RPG%2Fredeyed-jekyll-theme.svg)](https://badge.fury.io/rb/redeyed-jekyll-theme) &nbsp;
+[//]: # ([![GitHub version]&#40;https://badge.fury.io/gh/RedEyed-RPG%2Fredeyed-jekyll-theme.svg&#41;]&#40;https://badge.fury.io/rb/redeyed-jekyll-theme&#41; &nbsp;)
+[![GitHub package.json version](https://img.shields.io/github/package-json/v/RedEyed-RPG/redeyed-jekyll-theme)]() &nbsp;
 [![GitHub Workflow Status](https://img.shields.io/github/workflow/status/RedEyed-RPG/redeyed-jekyll-theme/CI)](https://github.com/RedEyed-RPG/redeyed-jekyll-theme/actions/workflows/ci.yml) &nbsp;
 [![GitHub license](https://img.shields.io/github/license/RedEyed-RPG/redeyed-jekyll-theme.svg)](https://github.com/RedEyed-RPG/redeyed-jekyll-theme/blob/master/LICENSE) &nbsp;
 [![Repo Code Weight](https://img.shields.io/github/languages/code-size/RedEyed-RPG/redeyed-jekyll-theme)](https://github.com/RedEyed-RPG/redeyed-jekyll-theme)
-<br/>
-[![Support Me @ Patreon](https://img.shields.io/badge/Patreon-Ragdata-%23FF424D?logo=patreon)](https://patreon.com/ragdata) &nbsp;
-[![Support Me @ GitHub](https://img.shields.io/badge/Github-Sponsor_This_Project-blue?logo=Github)](https://github.com/sponsors/Ragdata) &nbsp;
-[![Buy me a Ko-fi](https://img.shields.io/badge/Ko--fi-Ragdata-%23FF5E5B?logo=ko-fi)](https://ko-fi.com/ragdata)
+<br/><br/>
+[![Support Me via Patreon](https://img.shields.io/badge/Patreon-Sponsor-%23FF424D?logo=patreon)](https://patreon.com/ragdata) &nbsp;
+[![Support Me via Liberapay](https://img.shields.io/badge/liberapay-Support-yellow?logo=liberapay)](https://liberapay.com/Ragdata/) &nbsp;
+[![Support Me via GitHub](https://img.shields.io/badge/Github-Sponsor-blue?logo=Github)](https://github.com/sponsors/Ragdata) &nbsp;
+[![Support Me via Ko-fi](https://img.shields.io/badge/Ko--fi-Support-%23FF5E5B?logo=ko-fi)](https://ko-fi.com/ragdata)
 <br/><br/>
 [![](https://img.shields.io/badge/Guilded-Support%20Server%20Online-%23F5C400?logo=guilded)](https://www.guilded.gg/i/27dYX5Xk)
 
