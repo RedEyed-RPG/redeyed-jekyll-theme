@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.1.4](https://github.com/RedEyed-RPG/redeyed-jekyll-theme/compare/v0.1.3...v0.1.4) (2022-07-12)
+
+
+### Bug Fixes
+
+* add `_javascript/copyright` to list of files in `bin/release` ([d204174](https://github.com/RedEyed-RPG/redeyed-jekyll-theme/commit/d204174c4a58c2fe2eadb4a32e8af31f50952a03))
+
 ### 0.1.3 (2022-07-12)
 
 
