@@ -6,44 +6,15 @@
 // IMPORT REQUIRED VIEW STYLES
 //------------------------------------------------------------------
 
-@if $header == 'wide' {
-    @import "../includes/views/header-wide";
-} @else if $header == 'regular' {
-    @import "../includes/views/header";
-} @else if $header == 'banner' {
-    @import "../includes/views/header-banner";
-}
-
+@import "../includes/views/header";
 @import "../includes/elements/_navbar.scss";
 @import "../includes/elements/_breadcrumb.scss";
-
-@if $top-panel == 'full' {
-    @import "../includes/views/panel-top-full";
-} @else if $top-panel == '2-cols' {
-    @import "../includes/views/panel-top-2";
-} @else if $top-panel == '3-cols' {
-    @import "../includes/views/panel-top-3";
-} @else if $top-panel == '4-cols' {
-    @import "../includes/views/panel-top-4";
-}
-
-@if $bottom-panel { @import "../includes/views/panel-bottom"; }
-
-@if $foot-panel == 'full' {
-    @import "../includes/views/panel-foot-full";
-} @else if $foot-panel == '2-cols' {
-    @import "../includes/views/panel-foot-2";
-} @else if $foot-panel == '3-cols' {
-    @import "../includes/views/panel-foot-3";
-} @else if $foot-panel == '4-cols' {
-    @import "../includes/views/panel-foot-4";
-}
-
+@import "../includes/views/panel-top";
+@import "../includes/views/panel-bottom";
+@import "../includes/views/panel-foot";
 @import "../includes/views/footer";
 @import "../includes/views/copyright";
-
-@if $to-top { @import "../includes/extensions/back-to-top"; }
-
+@import "../includes/extensions/back-to-top";
 @import "../includes/elements/search-results";
 
 //------------------------------------------------------------------
