@@ -90,7 +90,7 @@ check() {
         _check_src "${FILES[$i]}"
     done
 
-    for i in "${TOOLS[@]}"; do
+    for i in "${!TOOLS[@]}"; do
         _check_command "${TOOLS[$i]}"
     done
 
@@ -98,7 +98,7 @@ check() {
 }
 
 _bump_file() {
-    for i in "${FILES[@]}"; do
+    for i in "${!FILES[@]}"; do
         sed -i "s/v[[:digit:]]\+\.[[:digit:]]\+\.[[:digit:]]\+/v$1/" "${FILES[$i]}"
     done
 
