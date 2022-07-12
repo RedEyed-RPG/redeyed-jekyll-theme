@@ -30,15 +30,17 @@ tagline             : "Content, Maps, & Software for your favourite TTRPGs"
 description         : "RedEyed RPG produces content and software for a variety of Table Top Role Playing Game systems"
 logo                : "/assets/img/logo/597x597-RPG-R-Circle-320.png"
 url                 : "https://www.redeyed-rpg.com"
-baseurl             : ""
 theme               : "redeyed-jekyll-theme"
-repo                : "https://github.com/RedEyed-RPG/redeyed-jekyll-theme"
 email               : "ragdata@redeyed-rpg.com"
 date_format         : "%-d %B %Y"
 encoding            : utf-8
 lang                : en-AU
 locale              : en_AU
 css_inline          : false
+
+# the subpath for your site eg: /blog
+baseurl                 : ""
+
 # google_analytics    :
 # google_site_verification:                   # jekyll-seo-tag
 # google_analytics_anonymize_ip:
@@ -50,30 +52,20 @@ toc: true                                   # table of contents - global switch
 theme_mode: dark                            # custom config option: [light|dark|brew]
 copyright: "Copyright (c) 2022 ~ {author} & RedEyed-RPG ~ Some Rights Reserved"
 
+# Change to your timezone » http://www.timezoneconverter.com/cgi-bin/findzone/findzone
+timezone: "Australia/Brisbane"
+
+# additional parameters for datetime localization (optional) » https://github.com/iamkun/jayjs/tree/dev/src/locale
+prefer_datetime_locale: en-au
+
+# the url of YOUR site repo
+repo: "https://github.com/RedEyed-RPG/redeyed-jekyll-theme"
+
 ####################################################################
 # 2. GEM SETTINGS
 ####################################################################
 feed:                                       # jekyll-feed
     path: /blog/feed.atom                   # jekyll-feed > feed path
-
-
-
-#pagination:                                 # jekyll-paginate-v2
-#    enabled: false                           # jekyll-paginate-v2 > enabled
-#    debug: false                            # jekyll-paginate-v2 > debug mode
-#    collection: posts                       # jekyll-paginate-v2 > default collection to paginate
-#    per_page: 10                            # jekyll-paginate-v2 > results per page
-#    permalink: 'page/:num:output_ext'       # jekyll-paginate-v2 > permalink format
-#    title: ':title - page :num'             # jekyll-paginate-v2 > title format
-#    limit: 0                                # jekyll-paginate-v2 > limit
-#    sort_field: date                        # jekyll-paginate-v2 > sort field
-#    sort_reverse: true                      # jekyll-paginate-v2 > reverse sort option
-#    category: posts                         # jekyll-paginate-v2 > category
-#    trail:                                  # jekyll-paginate-v2 > page link trail
-#        before: 2                           # jekyll-paginate-v2 > number of page links to show before current
-#        after: 2                            # jekyll-paginate-v2 > number of page links to show after current
-#    extension: html                         # jekyll-paginate-v2 > default page extension
-#    indexpage: index                        # jekyll-paginate-v2 > name of index page
 
 jekyll-mentions: https://twitter.com        # jekyll-mentions > service used when @replying
 
@@ -136,7 +128,6 @@ sass:
     sass_dir: ../_sass
 permalink: date                             # permalink style (YYYY/MM/DD/page-name)
 excerpt_separator: <!-- more -->            # marks end of excerpt in posts
-timezone: Australia/Brisbane                # timezone for blog and posts
 paginate: 10                                # paginate - # of items per page
 paginate_path: /page:num                    # paginate - default page slug for pages
 
@@ -232,12 +223,12 @@ plugins:
 # BUILD SETTINGS
 ####################################################################
 source: src
-#destination: _site
-#collections_dir: _data
-#data_dir: _data
-#plugins_dir: _plugins
-#layouts_dir: _layouts
-#includes_dir: _includes
+# destination: _site
+# collections_dir: _data
+# data_dir: _data
+# plugins_dir: _plugins
+# layouts_dir: _layouts
+# includes_dir: _includes
 
 ####################################################################
 # READ CONFIG
@@ -289,6 +280,7 @@ assets:
     self-host:
         enabled: false
         env: development
+
 ####################################################################
 # OUTPUT
 ####################################################################
