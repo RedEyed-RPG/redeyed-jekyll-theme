@@ -123,7 +123,7 @@ bump() {
 
     if [[ $opt_pre = false && -n $(git status . -s) ]]; then
         git add .
-        git commit -m "[chore](release): $1"
+        git commit -m "chore(release): $1"
     fi
 }
 
@@ -149,7 +149,7 @@ standard_version() {
 # prevent changelogs generated on master branch from having duplicate entries
 # (another bug in standard-version)
 standard_version_plus() {
-    temp_branch="prod-mirror"
+    temp_branch="master-mirror"
     temp_dir="$(mktemp -d)"
 
     git checkout -b "$temp_branch" "$PROD_BRANCH"
