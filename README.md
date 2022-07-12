@@ -18,8 +18,10 @@
 <a href="https://github.com/redeyed-rpg"><img src="assets/img/social/github.svg" height="24" width="24"></a> &nbsp;
 <a href="https://www.guilded.gg/i/27dYX5Xk"><img src="assets/img/social/guilded.svg" height="24" width="24"></a>
 
-[![Gem Version](https://badge.fury.io/rb/redeyed-jekyll-theme.svg)](https://badge.fury.io/rb/redeyed-jekyll-theme) &nbsp;
-[![Build Status](https://github.com/RedEyed-RPG/redeyed-jekyll-theme/workflows/build/badge.svg?branch=master&event=push)](https://github.com/RedEyed-RPG/redeyed-jekyll-theme/actions?query=branch%3Amaster+event%3Apush) &nbsp;
+
+[//]: # ([![Gem Version]&#40;https://badge.fury.io/rb/redeyed-jekyll-theme.svg&#41;]&#40;https://badge.fury.io/rb/redeyed-jekyll-theme&#41; &nbsp;)
+[![GitHub version](https://badge.fury.io/gh/RedEyed-RPG%2Fredeyed-jekyll-theme.svg)](https://badge.fury.io/rb/redeyed-jekyll-theme) &nbsp;
+[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/RedEyed-RPG/redeyed-jekyll-theme/CI)](https://github.com/RedEyed-RPG/redeyed-jekyll-theme/actions/workflows/ci.yml) &nbsp;
 [![GitHub license](https://img.shields.io/github/license/RedEyed-RPG/redeyed-jekyll-theme.svg)](https://github.com/RedEyed-RPG/redeyed-jekyll-theme/blob/master/LICENSE) &nbsp;
 [![Repo Code Weight](https://img.shields.io/github/languages/code-size/RedEyed-RPG/redeyed-jekyll-theme)](https://github.com/RedEyed-RPG/redeyed-jekyll-theme)
 <br/>
