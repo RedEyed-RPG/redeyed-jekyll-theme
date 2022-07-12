@@ -6,16 +6,16 @@ styles: true
 // -----------------------------------------------------------------
 // IMPORT BOOTSTRAP FUNCTIONS & VARIABLES
 // -----------------------------------------------------------------
-@import "../../_sass/lib/bootstrap-5.0.2/scss/functions";
-@import "../../_sass/lib/bootstrap-5.0.2/scss/variables";
+@import "lib/bootstrap-5.0.2/scss/functions";
+@import "lib/bootstrap-5.0.2/scss/variables";
 
 // -----------------------------------------------------------------
 // IMPORT THEME COLORS
 // -----------------------------------------------------------------
 @import
-"../../_sass/theme/scheme-brew",
-"../../_sass/theme/scheme-dark",
-"../../_sass/theme/scheme-light";
+"theme/scheme-brew",
+"theme/scheme-dark",
+"theme/scheme-light";
 
 
 html {
@@ -46,13 +46,13 @@ $layout: {{ page.layout | default: 'default' }};
 
 $header: {{ page.header | default: false }};
 
-$top-panel: {{ page.top-panel }};
+$top-panel: {{ page.top-panel | default: false }};
 
-$bottom-panel: {{ page.bottom-panel }};
+$bottom-panel: {{ page.bottom-panel | default: false }};
 
-$foot-panel: {{ page.foot-panel }};
+$foot-panel: {{ page.foot-panel | default: false }};
 
-$to-top: {{ page.to-top | default: site.to-top | default: false }}
+$to-top: {{ page.to-top | default: site.to-top | default: false }};
 
 $content-width: {{ page.content-width | default: site.content-width | default: '920px' }};
 
