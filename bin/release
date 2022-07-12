@@ -209,7 +209,7 @@ main() {
     fi
 
     # change heading of patch version to level 2 (a bug from `standard-version`)
-    sed -i "s/^### \[/g" CHANGELOG.md
+    sed -i "s/^### \[/## \[/g" CHANGELOG.md
 
     _version="$(grep '"version":' package.json | sed 's/.*: "//;s/".*//')"
 
