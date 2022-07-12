@@ -27,6 +27,7 @@ GEM_SPEC="$THEME_NAME.gemspec"
 NODE_CONFIG="package.json"
 
 FILES=(
+    "_javascript/copyright"
     "_sass/redeyed-jekyll-theme.scss"
     "COPYRIGHT"
     "README.md"
