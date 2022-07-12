@@ -2,7 +2,7 @@
 
 <img src="https://aever.net/images/brand/banner/RedEyedRPG-960-Red.png" alt="RedEyed RPG" />
 
-# redeyed-jekyll-theme<br />v0.1.4
+# redeyed-jekyll-theme<br />v0.1.5
 
 <em>A versatile, responsive, and powerful Jekyll Theme designed for a gaming site</em>
 

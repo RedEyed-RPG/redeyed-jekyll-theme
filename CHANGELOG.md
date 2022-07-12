@@ -2,6 +2,26 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.1.5](https://github.com/RedEyed-RPG/redeyed-jekyll-theme/compare/v0.1.4...v0.1.5) (2022-07-12)
+
+
+### Features
+
+* add jekyll-contentblocks to `_config.yml` ([f420d01](https://github.com/RedEyed-RPG/redeyed-jekyll-theme/commit/f420d01f172221f3bd34591fbd408ee3f251049e))
+
+
+### Bug Fixes
+
+* fix path to `favicons.html` in `_includes/head.html` ([a9ed9b9](https://github.com/RedEyed-RPG/redeyed-jekyll-theme/commit/a9ed9b97ead9701c0a3f612705e57591b550a47f))
+* import paths in `assets/css/style.scss` ([364f53d](https://github.com/RedEyed-RPG/redeyed-jekyll-theme/commit/364f53d45e9aebcf41877a899a1c554411c5f06e))
+* remove conditional block in `_sass/redeyed-jekyll-theme.scss` ([56d0947](https://github.com/RedEyed-RPG/redeyed-jekyll-theme/commit/56d0947fb7544e1219bfd0ad53a8629dc5f984dd))
+* remove conditional blocks in `_sass/layouts/panel-none.scss` ([a9c3328](https://github.com/RedEyed-RPG/redeyed-jekyll-theme/commit/a9c332837d6119c3bf781faea2a403923e35fc48))
+
+
+### Styling
+
+* update to new favicon ([44ee30f](https://github.com/RedEyed-RPG/redeyed-jekyll-theme/commit/44ee30fd6dd8b61c6e86cf48a325ba8a1e1e77a5))
+
 ## [0.1.4](https://github.com/RedEyed-RPG/redeyed-jekyll-theme/compare/v0.1.3...v0.1.4) (2022-07-12)
 
 
