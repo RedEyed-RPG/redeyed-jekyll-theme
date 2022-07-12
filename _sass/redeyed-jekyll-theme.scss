@@ -1,7 +1,7 @@
 //==================================================================
 // Stylesheets for redeyed-jekyll-theme
 //
-// RedEyed Jekyll Theme v0.1.4 (https://github.com/RedEyed-RPG/redeyed-jekyll-theme)
+// RedEyed Jekyll Theme v0.1.5 (https://github.com/RedEyed-RPG/redeyed-jekyll-theme)
 // Copyright © 2022 ~ Ragdata & RedEyed RPG
 // MIT Licensed
 //==================================================================
@@ -24,37 +24,6 @@
 @import
     "variables-hook",
     "layouts/breakpoints",
-    "layouts/base";
-
-@if $layout == 'default' or $layout == 'panel-none' {
-    @import "layouts/panel-none";
-} @else if $layout == 'panel-both' {
-    @import "layouts/panel-both";
-} @else if $layout == 'panel-left' {
-    @import "layouts/panel-left";
-} @else if $layout == 'panel-right' {
-    @import "layouts/panel-right";
-} @else if $layout == 'post' {
-    @import "layouts/post";
-} @else if $layout == 'archive' {
-    @import "layouts/archive";
-} @else if $layout == 'categories' {
-    @import "layouts/categories";
-} @else if $layout == 'category' {
-    @import "layouts/category";
-} @else if $layout == 'error' {
-    @import "layouts/error";
-} @else if $layout == 'page' {
-    @import "layouts/page";
-} @else if $layout == 'tag' {
-    @import "layouts/tag";
-} @else if $layout == 'tags' {
-    @import "layouts/tags";
-}
-
-
-
-
-@import
+    "layouts/base",
     "theme/typography",
     "includes/components/alert";

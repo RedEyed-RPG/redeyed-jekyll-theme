@@ -10,7 +10,15 @@ header {
     @extend %d-flex;
     @extend %justify-content-center;
 
+    &#banner {
+        div#header { @extend .container-fluid; }
+    }
+
     &#regular {
+        div#header { @extend .container-fluid; }
+    }
+
+    &#wide {
         div#header { @extend .container-fluid; }
     }
 }

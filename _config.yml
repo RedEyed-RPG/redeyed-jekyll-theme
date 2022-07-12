@@ -208,8 +208,7 @@ plugins:
     - jekyll-paginate
     - jekyll-spaceship
     - jekyll-pluralize
-#    - jekyll-paginate-v2
-#    - jekyll-include-cache
+    - jekyll-contentblocks
     - jekyll-redirect-from
     - jekyll-email-protect
     - jekyll-tagging-related_posts

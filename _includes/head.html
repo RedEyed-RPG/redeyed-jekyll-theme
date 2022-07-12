@@ -24,7 +24,7 @@
 
     <title>{% unless page.layout == "home" %}{{ page.title | append: " | "}}{% endunless %}{{ site.title }}</title>
 
-    {% include elements/favicons.html %}
+    {% include components/favicons.html %}
 
     {% if site.resources.ignore_env != jekyll.environment and site.resources.self_hosted %}
     <link href="{{ site.data.assets[origin].webfonts | relative_url }}" rel="stylesheet">
