@@ -20,7 +20,7 @@ working_branch="$(git branch --show-current)"
 
 STAGING_BRANCH="$(git symbolic-ref refs/remotes/origin/HEAD | sed 's@^refs/remotes/origin/@@')"
 
-PROD_BRANCH="prod"
+PROD_BRANCH="master"
 
 GEM_SPEC="$THEME_NAME.gemspec"
 
