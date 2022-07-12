@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.1.6](https://github.com/RedEyed-RPG/redeyed-jekyll-theme/compare/v0.1.5...v0.1.6) (2022-07-12)
+
+
+### Bug Fixes
+
+* fix asset.self-host bug ([774f067](https://github.com/RedEyed-RPG/redeyed-jekyll-theme/commit/774f067ef07f281478d083eff9b9c84c0e466c1e))
+
+
+### Styling
+
+* update to new favicons ([6bd42a0](https://github.com/RedEyed-RPG/redeyed-jekyll-theme/commit/6bd42a079aa7af1e4fbde93f09f6f4ea6e094348))
+
 ## [0.1.5](https://github.com/RedEyed-RPG/redeyed-jekyll-theme/compare/v0.1.4...v0.1.5) (2022-07-12)
 
 
